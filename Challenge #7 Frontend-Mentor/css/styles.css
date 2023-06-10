@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: var(--very-dark-blue);
+  }
+  body .main-container {
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--dark-desaturated-blue);
+    box-shadow: 5px 5px 25px var(--dark-desaturated-blue);
+  }
+  body .main-container .image {
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(rgba(117, 43, 167, 0.5), rgba(171, 57, 173, 0.5)), url(/images/image-header-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body .main-container .description {
+    display: flex;
+    flex-direction: column;
+  }
+  body .main-container .description .description-title {
+    padding: 10px 50px;
+    font-size: 25px;
+  }
+  body .main-container .description .description-title span {
+    color: var(--soft-violet);
+  }
+  body .main-container .description .description-paragraph {
+    font-size: 12px;
+    padding: 0px 70px 10px;
+    color: #ccc;
+  }
+  body .main-container .description .insights {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  body .main-container .description .insights .insight {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  body .main-container .description .insights .insight span {
+    font-size: 15px;
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 551px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: var(--very-dark-blue);
+  }
+  body .main-container {
+    width: 90%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--dark-desaturated-blue);
+    box-shadow: 5px 5px 25px var(--dark-desaturated-blue);
+  }
+  body .main-container .image {
+    width: 50%;
+    height: 100%;
+    border-radius: 3px;
+    background-image: linear-gradient(rgba(117, 43, 167, 0.5), rgba(171, 57, 173, 0.5)), url(/images/image-header-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body .main-container .description {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    padding: 0px;
+    text-align: left;
+  }
+  body .main-container .description .description-title {
+    padding: 20px;
+  }
+  body .main-container .description .description-title span {
+    color: var(--soft-violet);
+  }
+  body .main-container .description .description-paragraph {
+    font-size: 15px;
+    padding: 5px 30px 5px 5px;
+    color: #ccc;
+  }
+  body .main-container .description .insights {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0;
+  }
+  body .main-container .description .insights .insight {
+    padding: 10px;
+    font-weight: bold;
+  }
+  body .main-container .description .insights .insight span {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  body footer a {
+    color: rgba(117, 43, 167, 0.5);
+  }
+}
+@media screen and (min-width: 1001px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: var(--very-dark-blue);
+  }
+  body .main-container {
+    width: 90%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--dark-desaturated-blue);
+    box-shadow: 5px 5px 25px var(--dark-desaturated-blue);
+  }
+  body .main-container .image {
+    width: 50%;
+    height: 100%;
+    border-radius: 3px;
+    background-image: linear-gradient(rgba(117, 43, 167, 0.5), rgba(171, 57, 173, 0.5)), url(/images/image-header-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body .main-container .description {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+  }
+  body .main-container .description .description-title {
+    padding: 20px;
+  }
+  body .main-container .description .description-title span {
+    color: var(--soft-violet);
+  }
+  body .main-container .description .description-paragraph {
+    font-size: 15px;
+    padding: 20px 30px 20px 20px;
+    color: #ccc;
+  }
+  body .main-container .description .insights {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0;
+  }
+  body .main-container .description .insights .insight {
+    padding: 10px;
+    font-weight: bold;
+  }
+  body .main-container .description .insights .insight span {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  body footer a {
+    color: rgba(117, 43, 167, 0.5);
+  }
+}/*# sourceMappingURL=styles.css.map */
